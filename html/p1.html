@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style_q.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="cont_home">
+            <a href="../index.html"><img class="home_ic" src="../img/icons/casa-icono-silueta.png" alt=""></a>
+        </div>
+    </nav>
+</header>
+
+<!-- Inicio - Seccion de general -->
+<div class="contenedor_p">
+    <div class="contenedor_s">
+        <div class="titulo">
+            <h1 id="efecto">Cuestionario</h1>
+        </div>
+
+<!-- Inicio - Seccion de preguntas -->
+        <div class="contenido2">
+
+            <div id="question-container">
+                <h2 id="question">Pregunta 1: ¿Que animales son Aves?</h2>
+                <input type="checkbox" id="Checkboxloro"> loro<br>
+                <input type="checkbox" id="Checkboxtucan"> tucan<br>
+                <input type="checkbox" id="Checkboxlagarto"> lagarto<br>
+                <button onclick="nextQuestion()">Siguiente</button>
+            </div>
+            
+            <div id="answer-container" style="display: none;">
+                <h2>Selecciona el animamal domestico:</h2>
+                <select id="animalSelect">
+                    <option value="">Selecciona...</option>
+                    <option value="Perro">Perro</option>
+                    <option value="Leopardo">Leopardo</option>
+                    <option value="Jirafa">Jirafa</option>
+                </select>
+                <button onclick="nextQuestion()">Siguiente</button>
+            </div>
+            
+            <div id="number-container" style="display: none;">
+                <h2>¿Cuantos lados tiene un triangulo?</h2>
+                <input type="text" id="numberInput">
+                <button onclick="checkAnswer()">Finalizar</button>
+            </div>
+            
+            <div id="result" style="display: none;">
+                <h2>Resultado:</h2>
+                <p id="score"></p>
+                <p id="correct-answers"></p>
+                <button onclick="restart()">Reiniciar</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- Fin - Seccion de general -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
